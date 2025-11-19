@@ -1,0 +1,6 @@
+Le château est magnifique. Quand l'été arrive, chaque famille québécoise aime se promener le long de la rivière. C'est une question de tradition, mais c'est surtout un moment très agréable pour tout le monde.
+The code is designed to handle both small case and capital case accented letters.
+
+This is achieved through a critical step inside the map_letter_to_index function (in freq_counter.h), which is responsible for mapping characters to their counting bins:
+
+Case Normalization: The very first action the function takes is converting the input character (wc) to its lowercase equivalent using towlower(wc).
